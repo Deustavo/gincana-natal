@@ -83,3 +83,15 @@ a {
 .family-handle-value .button:hover {
   background-color: #fff;
 }
+
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 50%);
+  z-index: 2;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
