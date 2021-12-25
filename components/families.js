@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useEasybase } from 'easybase-react';
-import { useEffect } from 'react/cjs/react.development';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Families({ setLoading }) {
   const [hasError, setHasError] = useState(false);
