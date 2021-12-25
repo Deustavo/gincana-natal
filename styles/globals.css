@@ -6,7 +6,6 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-html,
 body {
   background-color: #4f46e5;
   color: #fff;
@@ -40,7 +39,12 @@ a {
 }
 
 .family-image {
-  border-radius: 8px;
+  width: 160px;
+  height: 160px;
+}
+
+.family-image img {
+  border-radius: 12px;
 }
 
 .family-text {
@@ -94,4 +98,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  h1, .family-text-name, .family-handle-value p {
+    font-size: 8vw;
+  }
+
+  .family-image {
+    width: 28vw;
+    height: 28vw;
+  }
+
+  .loading {
+    font-size: 24px;
+  }
 }

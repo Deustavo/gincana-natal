@@ -39,7 +39,9 @@ export default function Families({ setLoading }) {
     <div className='container-families'>
       {frame.map((family, index) =>
         <div key={index} className='family'>
-          <Image className='family-image' src={family.image} alt={family.name} width={160} height={160}/>
+          <div className='family-image'>
+            <Image src={family.image} alt={family.name} width="100%" height="100%" layout="responsive" objectFit="cover"/>
+          </div>
           <div className='family-text'>
             <p className='family-text-name'>{family.name}</p>
             <div className='family-handle-value'>
