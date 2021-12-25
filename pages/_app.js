@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import '../styles/snow.scss';
 import { EasybaseProvider } from 'easybase-react';
 import ebconfig from '../ebconfig';
 
